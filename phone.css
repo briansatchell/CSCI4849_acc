@@ -1,0 +1,59 @@
+.tabs{
+    background-color: gray;
+    font-size: 15px;
+    padding: 10px;
+    color: white;
+}
+.input{
+    padding: 8px 33px
+}
+.button{
+    padding: 16px 32px;
+    background-color: blue;
+    color: white;
+}
+.btn{
+    padding: 16px 44px;
+    background-color: blue;
+    color:white;
+}
+.button:hover{
+    padding: 16px 32px;
+    background-color: lightblue;
+    color: black;
+}
+.btn:hover{
+    padding: 16px 44px;
+    background-color: lightblue;
+    color:black;
+}
+.form {
+    color: rgba (201, 76, 76, 0.6);
+}
+.contact_button{
+    background-color: lightgray;
+    color: black;
+    font-size: 15;
+    font-weight: bold;
+    padding: 10px;
+}
+.contact {
+    width: 220px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: darkcyan;
+    color: white;
+    font-size: 20px 
+}
+.contact:hover {
+    background-color: cyan;
+    color: black;
+    font-size: 20px 
+}
+#logo {
+    float: right;
+    width: 30%;
+    text-align: center;
+    width:"150";
+    height:"150";
+}

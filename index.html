@@ -1,0 +1,151 @@
+<html>
+  <head>
+    <title>Dialer</title>
+    <link rel="stylesheet" href="phone.css">
+  
+<script>         
+    function dis(val) 
+    { 
+        document.getElementById("result").value+=val 
+    } 
+    </script>
+
+</head>
+ 
+  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <div>
+        <div id="tab_bar" role="navigation">
+            <button class="tabs" accesskey="D" id="btn_dialer">Dialer</button>
+            <button class="tabs" accesskey="L" id="btn_list">Contact List</button>
+            <button class="tabs" accesskey="A" id="btn_contact">Add Contact</button>
+            <button class="tabs" accesskey="H" id="btn_help">Help</button>
+        </div>
+    </div>
+    <main>
+    <div id="content" role="main" aria-live="polite">
+        <div id="content_dialer">
+            <h2>Dialer</h2>
+            <table >
+                <tr>
+                    <td><input class="input" type="text" id="result"></td>
+                    
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td><input class="button" accesskey="1" type="button" value="1" onclick="dis('1')"/></td>
+                    <td><input class="button" accesskey="2" type="button" value="2" onclick="dis('2')"/></td>
+                    <td><input class="button" accesskey="3" type="button" value="3" onclick="dis('3')"/></td>
+                </tr>
+                <tr>
+                    <td><input class="button" accesskey="4" type="button" value="4" onclick="dis('4')"/></td>
+                    <td><input class="button" accesskey="5" type="button" value="5" onclick="dis('5')"/></td>
+                    <td><input class="button" accesskey="6" type="button" value="6" onclick="dis('6')"/></td>
+                </tr>
+                <tr>
+                    <td><input class="button" accesskey="7" type="button" value="7" onclick="dis('7')"/></td>
+                    <td><input class="button" accesskey="8" type="button" value="8" onclick="dis('8')"/></td>
+                    <td><input class="button" accesskey="9" type="button" value="9" onclick="dis('9')"/></td>
+                </tr>
+                <tr>
+                    <td><input class="button" accesskey="*" type="button" value="*" onclick="dis('*')"/></td>
+                    <td><input class="button" accesskey="0" type="button" value="0" onclick="dis('0')"/></td>
+                    <td><input class="button" accesskey="#" type="button" value="#" onclick="dis('#')"/></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td ><input class="btn" id="dial" accesskey="d" type="button" value="dial" /></td>
+                    <td ><input class="btn" id="clear" accesskey="c" type="button" value="clear" /></td>
+                </tr>
+            </table>
+        </div>
+        <div id="content_list">
+            <h2>Contact List</h2>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Phone Number</th>
+                    <th>Email</th>
+                    <!-- <th>Dial Button</th> -->
+                </tr>
+                <tr>
+                    <td>Hermione Granger</td>
+                    <td href="tel:+1-808-555-6748">(808) 555-6748</td>
+                    <td>H.Granger@Hogwarts.edu</td>
+                    <!-- <td><input class="btn_dialer" type="button" value="Dial"/></td> -->
+                </tr>
+                <tr>
+                    <td>Ron Weasley</td>
+                    <td href="tel:+1-805-678-0987">(805) 678-0987</td>
+                    <td>R.Weasley@Hogwarts.edu</td>
+                </tr> 
+                <tr>
+                    <td>Remus Lupin</td>
+                    <td href="tel:+1-501-783-3772">(501) 783-3772</td>
+                    <td>R.Lupin@Hogwarts.edu</td>
+                </tr>     
+                <tr>
+                    <td>Regulus Black</td>
+                    <td href="tel:+1-609-684-8093">(609) 684-8093</td>
+                    <td>R.Black@Hogwarts.edu</td>
+                </tr>
+            </table>
+        </div>
+        <div id="content_contact">
+            <h2>Add Contact</h2>
+            <form>
+                Name:<br>
+                <input class="form" type="text" name="Name" placeholder="John Doe">
+                <br>
+                Phone:<br>
+                <input type="text" name="phone" placeholder="123-456-7890">
+                <br>
+                Email:<br>
+                <input type="text" name="email" placeholder="John.Doe@colorado.edu">
+                <br><br>
+                <input class="contact_button" accesskey="A" type="submit" value="Add Contact">
+                <input class="contact_button" accesskey="C" type="reset" value="Clear" >
+              </form> 
+        </div>
+        <div id="content_help">
+            <h2>Help</h2>
+            <table>
+                <tr>
+                    <th>Accessibility Features</th>
+                </tr>
+                <tr>
+                    <td>Dialer alt+D</td>
+                    
+                </tr>
+                <tr>
+                    <td>Press and hold alt + the number you want to dial</td>
+                </tr>
+                <tr>
+                    <td>Press and hold alt + d to dial or c to clear</td>
+                </tr>
+                <tr>
+                    <td>Contact List alt+L </td>
+                </tr>
+                <tr>
+                    <td>Add Contact alt+A </td>
+                </tr>
+                <tr>
+                    <td>Help alt+H </td>
+                </tr>
+            </table>
+                <figure>
+                    <img src="greenPhone.png" width="150" height="150"
+                    alt="Phone Logo">
+                    <figcaption>Green Phone Logo</figcaption>
+                </figure>
+        </div>
+    </div>
+    </main>
+
+
+    
+    <script src="phone.js"></script>
+  </body>
+</html>
