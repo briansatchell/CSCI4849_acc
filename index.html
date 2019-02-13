@@ -28,7 +28,7 @@
             <h2>Dialer</h2>
             <table >
                 <tr>
-                    <td><label>Dialer</label><input class="input" type="text" accesskey="d" value="" id="result"></td>
+                    <td><label for="result"></label><input class="input" type="text" accesskey="d" value="" id="result"></td>
                     
                 </tr>
             </table>
@@ -96,14 +96,14 @@
         <div id="content_contact">
             <h2>Add Contact</h2>
             <form>
-                <label>Name:</label><br>
-                <input class="form" type="text" name="Name" placeholder="John Doe">
+                <label for="Name">Name:</label><br>
+                <input id="Name" class="form" type="text" name="Name" placeholder="John Doe">
                 <br>
-                <label>Phone:</label><br>
-                <input type="text" name="phone" placeholder="123-456-7890">
+                <label for="phone">Phone:</label><br>
+                <input if="phone" type="text" name="phone" placeholder="123-456-7890">
                 <br>
-                <label>Email:</label><br>
-                <input type="text" name="email" placeholder="John.Doe@colorado.edu">
+                <label for="email">Email:</label><br>
+                <input if="email" type="text" name="email" placeholder="John.Doe@colorado.edu">
                 <br><br>
                 <input class="contact_button" accesskey="A" type="submit" value="Add Contact">
                 <input class="contact_button" accesskey="C" type="reset" value="Clear" >
